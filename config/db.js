@@ -16,7 +16,7 @@ const db = config.get('mongoURI');
 
 //===============
 // .connect() method returns a promise, 
-// so I could use .then().catch(), but the new standard seems to be .async() await with try catch blocks.
+// so I could use .then().catch(), but the new standard seems to be .async() with await wrapped in a try-catch blocks.
 //===============
 const connectDB = async () => {
  try {
@@ -38,13 +38,3 @@ const connectDB = async () => {
 module.exports = connectDB;
 
 
-
-
-//===============
-//===============
-
-//===============
-//===============
-
-//===============
-//===============
